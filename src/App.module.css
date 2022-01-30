@@ -1,0 +1,111 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 3px solid #f7f8fd;
+}
+
+header .leftContainer,
+header .rightContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .list_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+header .link {
+  margin-right: 30px;
+}
+
+header .link a {
+  text-decoration: none;
+  padding-bottom: 44px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 400;
+  color: #68707d;
+}
+
+header .link a:hover {
+  border-color: #ff7d1a;
+  color: #1d2025;
+}
+
+header .cartButton {
+  background-color: transparent;
+  position: relative;
+  border: 0;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+header .cartButton:hover svg path {
+  fill: #000;
+}
+
+header .cartButton .cartCount {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 11px;
+  width: 16px;
+  color: #fff;
+  font-size: 0.6rem;
+  border-radius: 6px;
+  background-color: #ff7d1a;
+}
+
+header .avatar {
+  height: 3rem;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+header .avatar:hover {
+  border: 2px solid #ff7d1a;
+}
+/*# sourceMappingURL=App.module.css.map */
