@@ -1,10 +1,14 @@
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+h1,h2,h3{
+  transition: all 0.4s ease-in;
 }
 
 @media (prefers-reduced-motion: no-preference) {
