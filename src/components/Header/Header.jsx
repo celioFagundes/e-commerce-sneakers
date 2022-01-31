@@ -11,31 +11,17 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [cartOpen, setCartOpen] = useState(false)
 
-  const openMenu = curr => {
-    let body = document.querySelector('body')
+  const openMenu = () => {
     setCartOpen(false)
     setMenuOpen(!menuOpen)
-    if (!curr) {
-      body.style.backgroundColor = 'hsl(0,0%,75%)'
-      body.style.transition = ' 0.4s'
-    } else {
-      body.style.backgroundColor = '#fff'
-    }
+    
   }
   const openCart = () =>{
     let body = document.querySelector('body')
     setCartOpen(!cartOpen)
     setMenuOpen(false)
-    body.style.backgroundColor = '#fff'
   }
-  useEffect(() => {
-    let body = document.querySelector('body')
-    if (menuOpen && width > 764) {
-      setMenuOpen(false)
-      body.style.backgroundColor = '#fff'
-    }
-  }, [width])
-
+ 
   return (
     <header>
       <div className={styles.container}>
@@ -47,8 +33,10 @@ const Header = () => {
               <AiOutlineMenu size={20} color='#000' />
             )}
           </div>
+        
           <img src={logo} alt='sneakers' />
           <nav>
+            <div className={`${styles.backgroundShadow} ${menuOpen && styles.responsive}`}></div>
             <ul className={`${styles.list_links} ${menuOpen && styles.responsive}`}>
               <li className={styles.link}>
                 <a href=''>Collections</a>

@@ -47,25 +47,48 @@ header .leftContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 35px;
 }
 
 header .leftContainer .menu_icon {
   display: none;
-  z-index: 3000;
 }
 
 @media (max-width: 767px) {
   header .leftContainer .menu_icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
+    position: fixed;
+    top: 37px;
+    left: 20px;
+    z-index: 3000;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
     margin-right: 20px;
-    left: -100%;
   }
+}
+
+header .leftContainer .backgroundShadow {
+  display: none;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  header .leftContainer .backgroundShadow {
+    display: block;
+    position: fixed;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2000;
+  }
+}
+
+header .leftContainer .backgroundShadow.responsive {
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 header .leftContainer .list_links {
@@ -189,6 +212,7 @@ header .rightContainer .cartIcon .cartCount {
 
 header .rightContainer .cartContainer {
   top: 100px;
+  z-index: 3000;
   right: 100px;
   display: -webkit-box;
   display: -ms-flexbox;

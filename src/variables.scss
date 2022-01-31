@@ -1,6 +1,7 @@
 
 $Orange: hsl(26, 100%, 55%);
 $Paleorange: #FFAC6A;
+$lightOrange: #FFEFE1;
 $Verydarkblue: hsl(220, 13%, 13%);
 $Darkgrayishblue: hsl(219, 9%, 45%);
 $Grayishblue: hsl(220, 14%, 75%);
@@ -11,6 +12,16 @@ $maxWidth: 1100px;
 
 @mixin tablet {
     @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin tablet-m {
+    @media (max-width: 650px) {
+        @content;
+    }
+}
+@mixin tablet-l {
+    @media (max-width: 970px) {
         @content;
     }
 }

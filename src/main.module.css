@@ -1,0 +1,187 @@
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 80vh;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  width: 100%;
+}
+
+@media (max-width: 970px) {
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.productContainer {
+  width: 100%;
+}
+
+.productContainer .description {
+  margin-bottom: 10px;
+}
+
+.productContainer .description :nth-child(1) {
+  color: #ff7d1a;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.productContainer .description :nth-child(3) {
+  color: #68707d;
+  font-size: 1rem;
+}
+
+.productContainer .description h1 {
+  color: #1d2025;
+  font-size: 3rem;
+}
+
+.productContainer .pricing {
+  margin-bottom: 20px;
+}
+
+.productContainer .pricing :nth-child(2) {
+  color: #68707d;
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+.productContainer .pricing div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productContainer .pricing div :nth-child(1) {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 15px;
+  color: #1d2025;
+}
+
+.productContainer .pricing div :nth-child(2) {
+  text-transform: uppercase;
+  background-color: #FFEFE1;
+  padding: 3px 6px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 1rem;
+  color: #ff7d1a;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.productContainer .buttonsBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productContainer .buttonsBox div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.productContainer .buttonsBox div button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  color: #ff7d1a;
+}
+
+.productContainer .buttonsBox div button:hover {
+  color: #FFAC6A;
+}
+
+.productContainer .buttonsBox div p {
+  padding: 10px 20px;
+}
+
+.productContainer .buttonsBox .addToCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff7d1a;
+  border-radius: 10px;
+  border: 0;
+  padding: 13px 50px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.productContainer .buttonsBox .addToCart svg {
+  margin-right: 15px;
+}
+
+.productContainer .buttonsBox .addToCart svg path {
+  fill: #fff;
+  margin-right: 10px;
+}
+
+.productContainer .buttonsBox .addToCart:hover {
+  background-color: #FFAC6A;
+}
+/*# sourceMappingURL=main.module.css.map */
