@@ -160,20 +160,21 @@ header .rightContainer {
   width: 100%;
 }
 
-header .rightContainer .cart {
+header .rightContainer .cartIcon {
   background-color: transparent;
   position: relative;
   top: 5px;
   border: 0;
   padding: 0;
   margin-right: 20px;
+  cursor: pointer;
 }
 
-header .rightContainer .cart:hover svg path {
+header .rightContainer .cartIcon:hover svg path {
   fill: #000;
 }
 
-header .rightContainer .cart .cartCount {
+header .rightContainer .cartIcon .cartCount {
   position: absolute;
   right: -5px;
   top: -5px;
@@ -210,6 +211,15 @@ header .rightContainer .cartContainer {
           box-shadow: 1px 0 10px 0px rgba(0, 0, 0, 0.103);
 }
 
+@media (max-width: 767px) {
+  header .rightContainer .cartContainer {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    width: 300px;
+  }
+}
+
 header .rightContainer .cartContainer .cartLabel {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -239,6 +249,11 @@ header .rightContainer .cartContainer .cartInfo .productInfo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .rightContainer .cartContainer .cartInfo .productInfo svg use:hover {
+  cursor: pointer;
+  fill: #000;
 }
 
 header .rightContainer .cartContainer .cartInfo .productDescription {
@@ -271,6 +286,11 @@ header .rightContainer .cartContainer .checkoutButton {
   color: #fff;
   font-weight: bold;
   width: 100%;
+  cursor: pointer;
+}
+
+header .rightContainer .cartContainer .checkoutButton:hover {
+  background-color: #FFAC6A;
 }
 
 header .rightContainer .avatar {
