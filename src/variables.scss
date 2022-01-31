@@ -9,4 +9,18 @@ $White: hsl(0, 0%, 100%);
 $Black: hsl(0, 0%, 0%);
 $maxWidth: 1100px;
 
-//(with 75% opacity for lightbox background)
+@mixin tablet {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (max-width: 1100px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: 500px) {
+        @content;
+    }
+}

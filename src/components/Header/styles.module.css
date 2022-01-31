@@ -1,0 +1,288 @@
+p {
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 3px solid #f7f8fd;
+}
+
+@media (max-width: 1100px) {
+  header .container {
+    padding: 20px;
+    border: 0;
+  }
+}
+
+header .leftContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .leftContainer .menu_icon {
+  display: none;
+  z-index: 3000;
+}
+
+@media (max-width: 767px) {
+  header .leftContainer .menu_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    margin-right: 20px;
+    left: -100%;
+  }
+}
+
+header .leftContainer .list_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  header .leftContainer .list_links {
+    position: fixed;
+    left: -100%;
+    background-color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+    width: 200px;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 100px;
+    z-index: 2000;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+}
+
+header .leftContainer .list_links.responsive {
+  top: 0;
+  left: 0;
+}
+
+header .leftContainer .link {
+  margin-right: 30px;
+}
+
+@media (max-width: 767px) {
+  header .leftContainer .link {
+    margin-bottom: 20px;
+  }
+}
+
+header .leftContainer .link a {
+  text-decoration: none;
+  padding-bottom: 44px;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-weight: 400;
+  color: #68707d;
+}
+
+header .leftContainer .link a:hover {
+  border-color: #ff7d1a;
+  color: #1d2025;
+}
+
+@media (max-width: 767px) {
+  header .leftContainer .link a {
+    padding-bottom: 0;
+  }
+  header .leftContainer .link a:hover {
+    border-color: transparent;
+  }
+}
+
+header .rightContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+header .rightContainer .cart {
+  background-color: transparent;
+  position: relative;
+  top: 5px;
+  border: 0;
+  padding: 0;
+  margin-right: 20px;
+}
+
+header .rightContainer .cart:hover svg path {
+  fill: #000;
+}
+
+header .rightContainer .cart .cartCount {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  height: 11px;
+  width: 16px;
+  color: #fff;
+  font-size: 0.6rem;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #ff7d1a;
+}
+
+header .rightContainer .cartContainer {
+  top: 100px;
+  right: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 0 10px 0px rgba(0, 0, 0, 0.103);
+          box-shadow: 1px 0 10px 0px rgba(0, 0, 0, 0.103);
+}
+
+header .rightContainer .cartContainer .cartLabel {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-weight: bold;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+header .rightContainer .cartContainer .cartImg {
+  height: 50px;
+  border-radius: 5px;
+}
+
+header .rightContainer .cartContainer .cartInfo {
+  margin: 10px 0;
+  padding: 20px 20px 0 20px;
+  border-top: 1px solid #b6bcc8;
+}
+
+header .rightContainer .cartContainer .cartInfo .productInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .rightContainer .cartContainer .cartInfo .productDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 15px;
+}
+
+header .rightContainer .cartContainer .cartInfo .productDescription p {
+  width: 100%;
+}
+
+header .rightContainer .cartContainer .checkoutButton {
+  margin-top: 15px;
+  padding: 18px 0;
+  border-radius: 10px;
+  border: 0;
+  background-color: #ff7d1a;
+  color: #fff;
+  font-weight: bold;
+  width: 100%;
+}
+
+header .rightContainer .avatar {
+  height: 3rem;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+header .rightContainer .avatar:hover {
+  border: 2px solid #ff7d1a;
+}
+/*# sourceMappingURL=styles.module.css.map */
