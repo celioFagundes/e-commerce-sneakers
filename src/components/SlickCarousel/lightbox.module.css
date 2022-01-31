@@ -1,0 +1,75 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.topSlider {
+  width: 100%;
+  max-width: 400px;
+}
+
+.topSlider .image {
+  height: 400px;
+  border-radius: 10px;
+}
+
+.bottomSlider {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 15px;
+}
+
+.bottomSlider div > div img:hover {
+  background-color: #fff;
+}
+
+.bottomSlider .image {
+  height: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bottomSlider .image:hover {
+  -webkit-filter: opacity(50%);
+          filter: opacity(50%);
+}
+
+.bottomSlider .imgBox {
+  height: 80px;
+  width: 80px;
+  border-radius: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.bottomSlider .imgBox:hover {
+  background-color: #fff;
+}
+
+.bottomSlider .imgBoxActive {
+  border: 2px solid #ff7d1a;
+  background-color: #fff;
+}
+
+.bottomSlider .active {
+  -webkit-filter: opacity(40%);
+          filter: opacity(40%);
+}
+/*# sourceMappingURL=lightbox.module.css.map */

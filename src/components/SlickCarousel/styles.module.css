@@ -1,0 +1,35 @@
+.topSlider .image {
+  height: 400px;
+  border-radius: 10px;
+}
+
+.bottomSlider {
+  max-width: 425px;
+  margin-top: 15px;
+}
+
+.bottomSlider .image {
+  height: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.bottomSlider .image:hover {
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
+}
+
+.bottomSlider .imgBox {
+  height: 80px;
+  width: 80px;
+  border-radius: 12px;
+  border: 2px solid #ff7d1a;
+  margin: 0;
+  padding: 0;
+}
+
+.bottomSlider .active {
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
+}
+/*# sourceMappingURL=styles.module.css.map */

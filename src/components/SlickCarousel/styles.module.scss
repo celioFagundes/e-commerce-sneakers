@@ -1,0 +1,33 @@
+@import '../../variables.scss';
+
+.topSlider{
+    .image{
+        height: 400px;
+        border-radius: 10px;
+    }
+}
+.bottomSlider{
+    max-width: 425px;
+    margin-top: 15px;
+    .image{
+        height: 80px;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+            filter: opacity(30%);
+        }
+    }
+    .imgBox{
+        height: 80px;
+        width: 80px;
+        border-radius: 12px;
+        border: 2px solid $Orange;
+        margin: 0;
+        padding: 0;
+    }
+        .active{
+            
+            filter: opacity(30%);
+    }
+    
+}
