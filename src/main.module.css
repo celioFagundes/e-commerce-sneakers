@@ -167,6 +167,7 @@
 @media (max-width: 500px) {
   .productContainer .buttonsBox div {
     width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -190,7 +191,6 @@
 @media (max-width: 500px) {
   .productContainer .buttonsBox div button {
     width: 100%;
-    margin-bottom: 20px;
   }
 }
 
@@ -199,6 +199,8 @@
 }
 
 .productContainer .buttonsBox div p {
+  min-width: 20px;
+  color: #000;
   padding: 10px 20px;
 }
 

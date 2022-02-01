@@ -73,8 +73,10 @@ header .leftContainer .menu_icon {
   }
 }
 
-header .leftContainer img {
-  margin-left: 25px;
+@media (max-width: 767px) {
+  header .leftContainer img {
+    margin-left: 25px;
+  }
 }
 
 header .leftContainer img.responsive {
@@ -231,6 +233,7 @@ header .rightContainer .cartContainer {
   top: 100px;
   z-index: 3000;
   right: 100px;
+  min-height: 192px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,6 +281,27 @@ header .rightContainer .cartContainer .cartInfo {
   margin: 10px 0;
   padding: 20px 20px 0 20px;
   border-top: 1px solid #b6bcc8;
+  min-height: 120px;
+  min-width: 346px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  header .rightContainer .cartContainer .cartInfo {
+    min-width: 0;
+  }
 }
 
 header .rightContainer .cartContainer .cartInfo .productInfo {
@@ -290,11 +314,20 @@ header .rightContainer .cartContainer .cartInfo .productInfo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 header .rightContainer .cartContainer .cartInfo .productInfo svg use:hover {
   cursor: pointer;
   fill: #000;
+}
+
+header .rightContainer .cartContainer .cartInfo .emptyMessage {
+  font-weight: bold;
+  color: #68707d;
+  text-align: center;
 }
 
 header .rightContainer .cartContainer .cartInfo .productDescription {
@@ -316,6 +349,11 @@ header .rightContainer .cartContainer .cartInfo .productDescription {
 
 header .rightContainer .cartContainer .cartInfo .productDescription p {
   width: 100%;
+}
+
+header .rightContainer .cartContainer .cartInfo .productDescription span {
+  color: #1d2025;
+  font-weight: bold;
 }
 
 header .rightContainer .cartContainer .checkoutButton {
