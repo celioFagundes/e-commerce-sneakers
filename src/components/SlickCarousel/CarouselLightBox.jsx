@@ -64,16 +64,16 @@ export default class CarouselLightBox extends Component {
           nextArrow={<NextArrow />}
         >
           <div>
-            <img src={img1} className={styles.image} />
+            <img src={img1} className={styles.image} alt ='product'/>
           </div>
           <div>
-            <img src={img2} className={styles.image} />
+            <img src={img2} className={styles.image} alt ='product'/>
           </div>
           <div>
-            <img src={img3} className={styles.image} />
+            <img src={img3} className={styles.image} alt ='product'/>
           </div>
           <div>
-            <img src={img4} className={styles.image} />
+            <img src={img4} className={styles.image} alt ='product'/>
           </div>
         </Slider>
         <Slider
@@ -95,6 +95,7 @@ export default class CarouselLightBox extends Component {
               >
                 <img
                   src={image}
+                  alt='product'
                   className={`${styles.image} ${index === this.state.imageIndex && styles.active}`}
                 />
               </div>

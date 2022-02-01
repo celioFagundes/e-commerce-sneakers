@@ -102,9 +102,8 @@ export default class AsNavFor extends Component {
               <img
                 src={image}
                 className={styles.image}
-                
+                alt = 'product'
                 onClick={ () => this.openLightBox()}
-                
               />
             </div>
           ))}
@@ -126,6 +125,7 @@ export default class AsNavFor extends Component {
               <div className={`${index === this.state.imageIndex && styles.imgBox}`}>
                 <img
                   src={image}
+                  alt='product'
                   className={`${styles.image} ${index === this.state.imageIndex && styles.active}`}
                 />
               </div>

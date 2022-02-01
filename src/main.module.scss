@@ -22,7 +22,8 @@
 }
 .productContainer {
   width: 100%;
-  @include tablet{
+  
+  @include desktop{
     padding: 0 20px 50px 20px;
   }
   .description {
@@ -39,12 +40,13 @@
     }
     h1 {
       color: $Verydarkblue;
+      margin: 20px 0 30px 0;
       font-size: 3rem;
     }
   }
   .pricing {
     margin-bottom: 20px;
-    :nth-child(2) {
+    .pricing_full{
       color: $Darkgrayishblue;
       font-weight: bold;
       text-decoration: line-through;
@@ -123,7 +125,7 @@
         padding: 10px 20px;
       }
     }
-    .addToCart {
+    .btn_addToCart {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -133,6 +135,7 @@
       padding: 13px 50px;
       color: #fff;
       font-weight: bold;
+      box-shadow: 0px 10px 15px 0px $Paleorange;
       cursor: pointer;
       @include mobile{
         width: 100%;
@@ -147,6 +150,7 @@
       }
       &:hover {
         background-color: $Paleorange;
+       
       }
     }
   }
