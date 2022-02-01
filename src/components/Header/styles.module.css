@@ -53,6 +53,7 @@ header .leftContainer .menu_icon {
   display: none;
   position: relative;
   top: 4px;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {

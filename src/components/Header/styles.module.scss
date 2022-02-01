@@ -29,6 +29,7 @@ header {
       display: none;
       position: relative;
       top: 4px;
+      cursor: pointer;
       @include tablet {
         display: block;
         
