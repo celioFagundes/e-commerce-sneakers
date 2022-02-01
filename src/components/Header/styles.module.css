@@ -47,15 +47,19 @@ header .leftContainer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 35px;
 }
 
 header .leftContainer .menu_icon {
   display: none;
+  position: relative;
+  top: 4px;
 }
 
 @media (max-width: 767px) {
   header .leftContainer .menu_icon {
+    display: block;
+  }
+  header .leftContainer .menu_icon.responsive {
     display: block;
     position: fixed;
     top: 37px;
@@ -67,6 +71,19 @@ header .leftContainer .menu_icon {
     margin: 0;
     margin-right: 20px;
   }
+}
+
+header .leftContainer img {
+  margin-left: 25px;
+}
+
+header .leftContainer img.responsive {
+  display: block;
+  position: fixed;
+  left: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .leftContainer .backgroundShadow {
@@ -120,7 +137,7 @@ header .leftContainer .list_links {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    height: 100%;
+    height: 100vh;
     width: 200px;
     text-align: center;
     padding-left: 20px;

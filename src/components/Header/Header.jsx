@@ -26,7 +26,7 @@ const Header = () => {
     <header>
       <div className={styles.container}>
         <div className={styles.leftContainer}>
-          <div className={styles.menu_icon} onClick={() => openMenu(menuOpen)}>
+          <div className={`${styles.menu_icon} ${menuOpen && styles.responsive}`} onClick={() => openMenu(menuOpen)}>
             {menuOpen ? (
               <AiOutlineClose size={20} color='#000' />
             ) : (
@@ -34,7 +34,7 @@ const Header = () => {
             )}
           </div>
         
-          <img src={logo} alt='sneakers' />
+          <img src={logo} alt='sneakers' className={ `${menuOpen && styles.responsive}`}/>
           <nav>
             <div className={`${styles.backgroundShadow} ${menuOpen && styles.responsive}`}></div>
             <ul className={`${styles.list_links} ${menuOpen && styles.responsive}`}>

@@ -6,7 +6,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -24,33 +24,46 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 35px;
+    
     .menu_icon {
       display: none;
-     
+      position: relative;
+      top: 4px;
       @include tablet {
         display: block;
-        position: fixed;
-        top: 37px;
-        left: 20px;
-        z-index: 3000;
-        align-items: center;
-        margin: 0;
-        margin-right: 20px;
-
+        
+        &.responsive {
+          display: block;
+          position: fixed;
+          top: 37px;
+          left: 20px;
+          z-index: 3000;
+          align-items: center;
+          margin: 0;
+          margin-right: 20px;
+        }
       }
     }
-    .backgroundShadow{
+   img{
+     margin-left: 25px;
+     &.responsive {
+      display: block;
+      position: fixed;
+      left: 40px;
+      
+      align-items: center;
+    }
+   }
+    .backgroundShadow {
       display: none;
       height: 100vh;
-        width: 100%;
+      width: 100%;
       @include tablet {
         display: block;
         position: fixed;
         left: -100%;
         background-color: rgba(0, 0, 0, 0.75);
         z-index: 2000;
-        
       }
       &.responsive {
         top: 0;
@@ -71,7 +84,7 @@ header {
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 100%;
+        height:100vh;
         width: 200px;
         text-align: center;
         padding-left: 20px;
@@ -155,13 +168,10 @@ header {
       background-color: #fff;
       border-radius: 10px;
       box-shadow: 1px 0 10px 0px rgba(0, 0, 0, 0.103);
-      @include tablet{
+      @include tablet {
         left: 50%;
         transform: translate(-50%, 0);
         width: 300px;
-        
-        
-        
       }
       .cartLabel {
         align-self: flex-start;
